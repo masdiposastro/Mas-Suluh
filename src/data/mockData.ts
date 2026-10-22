@@ -2,10 +2,14 @@ import type { ActivityEntry, AppSettings, EvidenceItem, GuidanceGroup, MaterialD
 
 export const defaultUser = {
   id: 'u-001',
+  email: 'penyuluh@kemenag.go.id',
   name: 'Akhmad Syarif',
   position: 'Penyuluh Agama Islam',
   unit: 'Kementerian Agama Kabupaten Sumenep',
-  role: 'penyuluh' as const
+  role: 'penyuluh' as const,
+  nip: '199201012024031001',
+  phone: '081234567890',
+  address: 'Kabupaten Sumenep',
 };
 
 export const defaultSettings: AppSettings = {
