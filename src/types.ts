@@ -14,10 +14,14 @@ export type ActivityType =
 
 export interface UserProfile {
   id: string;
+  email: string;
   name: string;
   position: string;
   unit: string;
   role: Role;
+  nip?: string;
+  phone?: string;
+  address?: string;
 }
 
 export interface SermonDraft {
@@ -77,4 +81,9 @@ export interface AppSettings {
   aiMode: 'demo' | 'live';
   requireVerification: boolean;
   themeColor: string;
+}
+
+export interface AuthSession {
+  token: string;
+  user: UserProfile;
 }
