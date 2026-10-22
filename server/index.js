@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import activityLogRoutes from './routes/activityLogs.js';
 import googleDriveRoutes from './routes/googleDrive.js';
+import authRoutes from './routes/auth.js';
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.get('/health', (_req, res) => {
   });
 });
 
+app.use('/api/auth', authRoutes);
 app.use('/api/activity-logs', activityLogRoutes);
 app.use('/api/google-drive', googleDriveRoutes);
 
