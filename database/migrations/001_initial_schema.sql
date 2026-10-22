@@ -1,0 +1,2 @@
+-- Migration placeholder for schema evolution.
+-- Copy the schema.sql content to your Supabase project before creating policies.
